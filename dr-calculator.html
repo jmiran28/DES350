@@ -4,8 +4,7 @@
 <style>
 	
 	html{background-color: #E8E8E8;
-			font-family:"Helvetica Neue", Helvetica, Arial, "sans-serif";
-
+		font-family:"Helvetica Neue", Helvetica, Arial, "sans-serif";
 		
 	}
 	
@@ -138,7 +137,7 @@
 	top: 320px;
 	left:30px;
 	font-size:10px;
-	font-weight:bold;
+	font-weight:bold  ;
 	color:#E8E8E8; 
 	}
 	
@@ -251,6 +250,14 @@
 	}
 	
 	
+	#message{
+		position: absolute;
+		top:420px;
+		left:-400px;
+		color: black;
+		font-size: 12px;
+		
+	}
 	
 	
 	
@@ -343,8 +350,12 @@ onclick="calculator.display.value =''">
 <input type="button" 
 class="operator" name="equals" id="equal" value="="
 onclick="calculator.display.value
-=eval(calculator.display.value)">	
+=eval(calculator.display.value)">	<br>
+	
 
+<div id="message"> HTML Calculator by John-John Miranda.<br>
+Based on the work of Dieter Rams.
+	</div>
 
 </div>	
 
