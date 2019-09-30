@@ -1,0 +1,1106 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* CSS Document */
+/* Reset browser default styles: */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+  list-style: none;
+}
+
+/* border-box so that border widths aren't added to the total width of the element: */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Clearfix to make floated elements behave correctly: */
+  .cf:before, .cf:after { content: ""; display: table; }
+  .cf:after { clear: both; }
+  .cf { zoom: 1; }
+
+/* In order for the percentage heights to work we need this: */
+html, body { height:100%; }
+ 
+    html{
+        background-color: white;
+        height:;
+        
+    }
+    
+    @font-face {
+        font-family: 'Helvetica Neue LT Std 93 Black Extended';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Helvetica Neue LT Std 93 Black Extended'), url('HelveticaNeueLTStd-BlkEx.woff') format('woff');
+}
+    
+    @font-face{
+        font-family:'Helvetica Neue LT Std 77 Bold Condensed';
+        font-style:normal;
+        font-weight:normal;
+        src: local('Helvetica Neue LT Std 77 Bold Condensed'), url(HelveticaNeueLTStd-BdCn.woff) format('woff');
+    }  
+    
+    @font-face{
+        font-family:'Helvetica Neue LT Std 95 Black';
+        font-style:normal;
+        font-weight:normal;
+        src: local('Helvetica Neue LT Std 95 Black'), url(HelveticaNeueLTStd-Blk.woff) format('woff');
+    }      
+   
+
+    .container{
+        background-color:white;
+        width:100vw;
+        height:100vh;
+        height-max:100vh;
+        margin:0;
+        padding:0;
+        position: relative;
+
+    }  
+      
+    .title{
+        
+        background-color:transparent;
+        width: auto;
+        height:86%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+          
+    }
+    
+    
+    h1{
+        font-size:110px;
+        line-height: 125px;
+        font-family: 'Helvetica Neue LT Std 93 Black Extended', 'Helvetica Bold', 'Arial Black';        
+        padding-bottom: 0px;
+      
+    }    
+    
+    p1{ 
+        font-size:16px;
+        font-family:"Helvetica Neue LT Std 77 Bold Condensed", "Helvetica Bold", "Arial Bold";
+        line-height: 14px;    
+        position:absolute;
+        bottom:0;
+        left: 0; 
+        margin-top:0%;
+    }
+    
+    
+   
+
+    
+    .triangle{
+
+        border-style: solid;
+        border-width: 500px 0 0 400px;
+        border-color: transparent transparent transparent #0B5CFF;
+        position:absolute;
+        z-index:-1;
+        float: left;
+        top: 21%;
+        left:13%;
+        
+    }
+    
+ 
+    .circle{
+		display:inline-block;
+        background: #FF5C50;
+    	line-height: 380px;
+		width: 380px;
+        height: 380px;
+        border-radius: 380px;
+        position: absolute;
+        z-index: -1;
+        top:13%;
+        right:20%;
+            
+		}
+    
+    
+    .bar{
+        background-color:black;
+        width: 65%;
+        height: 20px;
+        position:absolute;
+        bottom:0;
+        left: 0;
+    }
+    
+
+    p2{      
+        font-size:20px;
+        font-family:"Helvetica Neue LT Std 77 Bold Condensed", "Helvetica Bold", "Arial Bold";
+        line-height: 28px;    
+        text-align: left;
+        
+    }
+    
+    
+      .container2{
+        background-color:#FF5C50;
+        width:100%;
+        height:101vh;
+        height-min:100vh;
+        margin:0;
+        padding:0;
+          
+        text-align: center;
+    }  
+    
+    
+    
+    .column1{
+        background-color:;
+        font-size:20px;
+        font-family:"Helvetica Neue LT Std 77 Bold Condensed", "Helvetica Bold", "Arial Bold";
+        color:#FFF;
+        line-height: 28px; 
+        width: 28%;
+        float: left;
+        margin-top:10%;
+        margin-left:25%;
+        margin-right:20px;
+        text-align: left;
+        
+    }
+
+    .column2{
+        background-color:;
+        font-size:20px;
+        font-family:"Helvetica Neue LT Std 77 Bold Condensed", "Helvetica Bold", "Arial Bold";
+        color:#FFF;
+        line-height: 28px; 
+        width: 28%;
+        float: left;
+        margin-top:15%;
+        text-align: left;
+    }
+    
+
+    h2{
+        font-family:"Helvetica Neue LT Std 95 Black", "Helvetica Bold", "Arial Black";
+        font-size:52px;
+        line-height: 58px;
+    }
+    
+    
+      .container3{
+        background-color:#0B5CFF;
+        width:100%;
+        height:101vh;
+        height-max:101vh;
+        margin:0;
+        padding:0;
+        z-index: -10;
+        position: relative;
+    }  
+    
+    .circle2{
+        background-color:black ;
+    	line-height: 380px;
+		width: 380px;
+        height: 380px;
+        border-radius: 380px;
+        position: absolute;
+        margin: 13% 15%  0%;
+        z-index: -10;
+ 
+    }    
+    
+
+        .column3{
+        background-color:;
+        font-size:20px;
+        font-family:"Helvetica Neue LT Std 77 Bold Condensed", "Helvetica Bold", "Arial Bold";
+        color:white;
+        line-height: 28px; 
+        width:422px;
+        float: left;
+        margin-top:23%;
+        margin-left:25%;
+        margin-right:20px;
+        text-align: left;
+        z-index:5;
+        position: inherit;
+        
+    }
+    
+    .column4{
+        background-color:;
+        font-size:20px;
+        font-family:"Helvetica Neue LT Std 77 Bold Condensed", "Helvetica Bold", "Arial Bold";
+        color:white;
+        line-height: 28px; 
+        width:462px;
+        float: left;
+        margin-top:10%;
+        text-align: left;
+    } 
+    
+      .container4{
+        background-color:white;
+        width:100%;
+        height:101vh;
+        height-min:100vh;
+        margin:0;
+        padding:0;
+        position:relative;
+        z-index:-9;
+    }  
+ 
+
+
+    
+    .triangle2{
+        border-style: solid;
+        border-width: 600px 0 0 500px;
+        border-color: transparent transparent transparent #FF5C50;
+        z-index:-1;
+        position: absolute;
+        top: 21%;
+        left:38%;
+        
+    }
+    
+ 
+    
+    
+    .column5{
+        background-color:;
+        font-size:20px;
+        font-family:"Helvetica Neue LT Std 77 Bold Condensed", "Helvetica Bold", "Arial Bold";
+        color:#000;
+        line-height: 28px; 
+        width:392px;
+        float: left;
+        margin-top:15%;
+        margin-left:28%;
+        margin-right:20px;
+        text-align: left;
+        z-index:5;
+        position: inherit;
+        
+    }
+    
+    .column6{
+        background-color:;
+        font-size:20px;
+        font-family:"Helvetica Neue LT Std 77 Bold Condensed", "Helvetica Bold", "Arial Bold";
+        color:#000;
+        line-height: 28px; 
+        width:382px;
+        float: left;
+        margin-top:15%;
+        text-align: left;
+    }     
+    
+    
+      .container5{
+        background-color:#0B5CFF;
+        width:100%;
+        height:101vh;
+        height-min:100vh;
+        margin:0;
+        padding:0;
+    }      
+    
+    .column7{
+        background-color:;
+        font-size:20px;
+        font-family:"Helvetica Neue LT Std 77 Bold Condensed", "Helvetica Bold", "Arial Bold";
+        color:#FFF;
+        line-height: 28px; 
+        width:401px;
+        float: left;
+        margin-top:18%;
+        margin-left:25%;
+        margin-right:20px;
+        text-align: left;
+        z-index:5;
+        position: inherit;
+        
+    }
+    
+    .column8{
+        background-color:;
+        font-size:20px;
+        font-family:"Helvetica Neue LT Std 77 Bold Condensed", "Helvetica Bold", "Arial Bold";
+        color:#FFF;
+        line-height: 28px; 
+        width:472px;
+        float: left;
+        margin-top:10%;
+        text-align: left;
+    }        
+    
+    
+      .container6{
+        background-color:#FF5C50;
+        width:100%;
+        height:101vh;
+        height-min:100vh;
+        margin:0;
+        padding:0;
+        position: relative;
+        z-index: -10;
+    }      
+    
+    
+    
+    
+    .circle4{
+        display:inline-block;
+        background: #0B5CFF;
+    	line-height: 400px;
+		width: 400px;
+        height: 400px;
+        border-radius: 400px;
+        position: absolute;
+        z-index: -1;
+        top:35%;
+        right:60%;
+        
+        
+        
+    }    
+    
+ 
+    
+    .triangle3{
+         border-style: solid;
+        border-width: 600px 0 0 500px;
+        border-color: transparent transparent transparent #FFF;
+        z-index:-1;
+        position: absolute;
+        top: 10%;
+        right:10%;
+        
+    }   
+    
+    .column9{
+        background-color:;
+        font-size:20px;
+        font-family:"Helvetica Neue LT Std 77 Bold Condensed", "Helvetica Bold", "Arial Bold";
+        color:#000;
+        line-height: 28px; 
+        width:400px;
+        float: left;
+        margin-top:12%;
+        margin-left:25%;
+        margin-right:20px;
+        text-align: left;
+        z-index:5;
+        position: inherit;
+        
+    }    
+    
+    .column10{
+        background-color:;
+        font-size:20px;
+        font-family:"Helvetica Neue LT Std 77 Bold Condensed", "Helvetica Bold", "Arial Bold";
+        color:#000;
+        line-height: 28px; 
+        width:480px;
+        float: left;
+        margin-top:21%;
+        text-align: left;
+    }        
+    
+    @media screen and (max-width: 600px) {
+  html {
+    background-color: #fff;
+    
+  }
+
+        h1{
+            font-size: 40px;
+            line-height: 56px;
+            margin-top:3%;
+        } 
+    
+        .title{background-color: ;
+        height:75%;
+        }
+        
+        .triangle{top:12.5%;
+                left:14%;
+                    border-color: transparent transparent transparent #0B5CFF;
+
+            
+        }
+        
+        .circle{
+            top:2%;
+            right:24%;
+            background-color: #FF5C50;
+        }
+        
+        .triangle, .triangle2, .triangle3{         
+            
+            border-width: 275px 0 0 175px;
+
+            
+        }
+        
+        .circle, .circle3{
+        line-height: 150px;
+		width: 150px;
+        height: 150px;
+        border-radius: 150px;   
+        }
+        
+        h2{
+            font-size: 28px;
+            line-height: 34px;
+        }
+    
+        p1{
+            margin-top:20%;
+            font-size:16px;
+            line-height: 20px;
+        }
+    
+        p2{
+            font-size:16px;
+            line-height: 16px;
+            
+        }
+    
+        .container2{
+            height:140vh;
+        }
+    
+        .column1{
+            float:none;
+            width:85vw;
+            margin:0% 0 0 8%;
+            padding:45px 20px 0 0;
+        }
+        
+        .column2{
+            float: none;
+            
+            width:85vw;
+            margin:0% 0 0 8%;
+            padding:25px 20px 0 0;            
+            
+        }
+        
+        
+        .container3{
+            height:130vh;
+        }
+    
+        .column3{
+            float:none;
+            width:85vw;
+            margin:0% 0 0 8%;
+            padding:55px 20px 55px 0;
+            
+        }
+        
+        .column4{
+            float: none;
+            
+            width:85vw;
+            margin:0% 0 0 8%;
+            padding:25px 20px 0 0;            
+            
+        }
+        
+        .circle2{
+            top:4%;
+            right:0%;
+            background-color: ;
+            line-height: 250px;
+		    width: 250px;
+            height: 250px;
+            border-radius: 250px;  
+        }
+        
+        
+        .container4{
+            height:130vh;
+        }
+    
+        .column5{
+            float:none;
+            width:85vw;
+            margin:0% 0 0 8%;
+            padding:55px 20px 55px 0;
+            
+        }
+        
+        .column6{
+            float: none;
+            
+            width:85vw;
+            margin:0% 0 0 8%;
+            padding:25px 20px 0 0;            
+            
+        }        
+        
+        .triangle2{
+            top:35%;
+            left:20%;
+            border-width: 400px 0 0 300px;
+
+            
+        }
+        
+        .container5{
+            height:115vh;
+            height-min:900px;
+        }
+    
+        .column7{
+            float:none;
+            width:85vw;
+            margin:0% 0 0 8%;
+            padding:55px 20px 55px 0;
+            
+        }
+        
+        .column8{
+            float: none;
+            
+            width:85vw;
+            margin:0% 0 0 8%;
+            padding:25px 20px 0 0;            
+            
+        }           
+        
+        .container6{
+            height:115vh;
+            height-min:900px;
+        }
+    
+        .column9{
+            float:none;
+            width:85vw;
+            margin:0% 0 0 8%;
+            padding:55px 20px 55px 0;
+            
+        }
+        
+        .column10{
+            float: none;
+            
+            width:85vw;
+            margin:0% 0 0 8%;
+            padding:25px 20px 0 0;            
+            
+        }           
+        
+        .triangle3{
+            top:5%;
+            left:15%;
+            border-width: 300px 0 0 200px;
+
+              
+        }
+        
+        
+        
+        .circle4{
+            top:55%;
+            right:5%;
+            background-color: ;
+            line-height: 250px;
+		    width: 250px;
+            height: 250px;
+            border-radius: 250px;             
+        }
+        
+    }
+    
+    
+    @media screen and (min-width:601px) and (max-width: 992px) {
+          html {
+        background-color: hotpink;
+      }
+        
+        
+        h1{
+            font-size: 76px;
+            line-height: 85px;
+            margin-top:3%;
+        } 
+    
+        .title{background-color: ;
+        height:75%;
+        }
+        
+        .triangle{top:12.5%;
+                left:11%;
+
+            
+        }
+        
+        .circle{
+            top:2%;
+            right:24%;
+        }
+        
+        .triangle, .triangle2, .triangle3{         
+            
+            border-width: 375px 0 0 275px;
+
+            
+        }
+        
+        .circle, .circle3{
+        line-height: 250px;
+		width: 250px;
+        height: 250px;
+        border-radius: 250px;   
+        }
+        
+        h2{
+            font-size: 38px;
+            line-height: 42px;
+        }
+    
+        p1{
+            margin-top:20%;
+            font-size:16px;
+            line-height: 20px;
+        }
+    
+        p2{
+            font-size:20px;
+            line-height: 26px;
+            
+        }
+    
+        .container2{
+            height:100vh;
+        }
+    
+        .column1{
+            float:none;
+            width:85vw;
+            margin:0% 0 0 8%;
+            padding:45px 20px 0 0;
+        }
+        
+        .column2{
+            float: none;
+            
+            width:85vw;
+            margin:0% 0 0 8%;
+            padding:25px 20px 0 0;            
+            
+        }
+        
+        
+        .container3{
+            height:100vh;
+        }
+    
+        .column3{
+            float:none;
+            width:85vw;
+            margin:0% 0 0 8%;
+            padding:55px 20px 55px 0;
+            
+        }
+        
+        .column4{
+            float: none;
+            
+            width:85vw;
+            margin:0% 0 0 8%;
+            padding:25px 20px 0 0;            
+            
+        }
+        
+        .circle2{
+            top:4%;
+            right:0%;
+            background-color: ;
+            line-height: 350px;
+		    width: 350px;
+            height: 350px;
+            border-radius: 350px;  
+        }
+        
+        
+        .container4{
+            height:100vh;
+        }
+    
+        .column5{
+            float:none;
+            width:85vw;
+            margin:0% 0 0 8%;
+            padding:55px 20px 55px 0;
+            
+        }
+        
+        .column6{
+            float: none;
+            
+            width:85vw;
+            margin:0% 0 0 8%;
+            padding:25px 20px 0 0;            
+            
+        }        
+        
+        .triangle2{
+            top:27%;
+            left:20%;
+            border-width: 500px 0 0 400px;
+
+            
+        }
+        
+        .container5{
+            height:100vh;
+            height-min:900px;
+        }
+    
+        .column7{
+            float:none;
+            width:85vw;
+            margin:0% 0 0 8%;
+            padding:55px 20px 55px 0;
+            
+        }
+        
+        .column8{
+            float: none;
+            
+            width:85vw;
+            margin:0% 0 0 8%;
+            padding:25px 20px 0 0;            
+            
+        }           
+        
+        .container6{
+            height:100vh;
+            height-min:900px;
+        }
+    
+        .column9{
+            float:none;
+            width:85vw;
+            margin:0% 0 0 8%;
+            padding:55px 20px 55px 0;
+            
+        }
+        
+        .column10{
+            float: none;
+            
+            width:85vw;
+            margin:0% 0 0 8%;
+            padding:25px 20px 0 0;            
+            
+        }           
+        
+        .triangle3{
+            top:8%;
+            left:14%;
+            border-width: 400px 0 0 300px;
+
+              
+        }
+        
+        
+        
+        .circle4{
+            top:55%;
+            right:5%;
+            background-color: ;
+            line-height: 280px;
+		    width: 280px;
+            height: 280px;
+            border-radius: 280px;             
+        }
+                
+        
+}
+    
+    
+    
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+</style>
+    
+<meta charset="UTF-8">
+<title>responsive-webposter</title>
+</head>
+
+<body>
+    
+    <div class="container">
+       <div class="title">
+   
+        <h1>Dieter Rams<br>10 Princi –<br>ples<br>
+        for Good De<br>– sign</h1>
+                
+        <p1>Write out your own interpretation of the 10 principles of good design that include:<br>
+            <br>
+            a. Your interpration of what each of the 10 principles mean<br>
+            <br>
+            b. An example of something you use that follows each principle as you interpret it<br>
+            <br>
+            c. How you would, have in the past, or would not apply this principle in your work<br></p1>         
+
+        <div class="triangle"></div>    
+        <!--http://apps.eky.hk/css-triangle-generator/-->         
+        
+        <div class="circle"></div>
+        </div> 
+
+        
+        <div class="bar"></div>
+    </div>
+    
+    <div class="container2">
+    <div class="column1">
+        <h2>Good design<br>
+         is innovation</h2>
+        <br>        
+        <p2>a. Technologies change and improve constantly and good design must seek to push itself to the limits.<br>
+        <br>
+        b. Wireless charging, as the technology gets better all our device can be charged wirelessly. <br>
+        <br>
+        c. I have not thought about innovating during my design process, but I do think it is important. I should at the very least think about the possibility of innovating.</p2>
+
+    </div>
+    <div class="column2">
+        <h2>Good design<br>makes a
+        product useful</h2>
+        <br>
+        <p2>a. The point of a product is to be useful to the consumer and detachment from that is not good design.<br>
+        <br>
+        b. My water bottle is exactly what I expect 
+        and nothing more.<br>
+        <br>
+        c.  For example the goal of a poster can be to tell the audience of an event, and this will have priority
+        over other details. I have designed posters for an event 
+        and I made sure it was useful in explaining the
+        details of the event.</p2>
+    </div>
+    </div>
+
+    <div class="container3">
+        <div class="circle2"></div>
+        <div class="column3">
+        <h2>Good design<br>
+        is aesthetic</h2>
+        <br>
+        <p2>a. Good design is Aesthetics because they contribute 
+        to the consumers enjoyment of the product.<br>
+        <br>
+        b. I think my laptop is pretty, and apple definitely
+        considers aesthetic among other things.<br>
+        <br>
+        c. I think this is always a goal of designers.</p2>
+        </div>
+        <div class="column4">
+        <h2>Good design
+        makes a product understandable</h2><br>
+            
+        <p2>a. The product must be simple to use for it to be good
+        design. The best design allows for the product to instruct
+        the consumer.<br>
+        <br>
+        b. I use a toothbrush that has different setting and each
+        setting has a button with an icon. I have never read
+        the instructions but because of the buttons and icons I can
+        understand the product.<br>
+        <br>
+        c. I have designed a card game and I think I was able to
+        distinguish the suites using only 3 or 4 different 
+        shapes and patterns.</p2>
+        </div>
+    </div>
+    
+    <div class="container4">
+        <div class="triangle2"></div>    
+        <!--http://apps.eky.hk/css-triangle-generator/-->
+        <div class="column5">
+        <h2>Good design<br>
+        is unobtrusive</h2>
+        <br>
+        <p2>a. Products that have a job should not be pretty for
+        the sake of being pretty. Instead should look
+        neutral and leave the expression to the consumer.<br>
+        <br>
+        b. I use a pan for eggs, it is basically just a small
+        pan. It is not some crazy device and I think it follows
+        this principle.<br> 
+        <br>
+        c. I have not used this principle, a lot of the time
+        for me I have designed things that want to
+        attract attention.<br></p2>
+        <br>    
+        </div>
+        <div class="column6">
+        <h2>Good design<br> 
+        is honest</h2>
+        <br>
+        <p2>a. Good design does not over promise on the
+        products capabilities.<br>
+        <br>
+        b. A lot of the time we see over promising from
+        companies from tech to clothing. So more
+        companies should follow this.<br>
+        <br>
+        c. I would never want to overpromise on my abilities
+        as a designer and it is important for me to
+        understand that I am learning and developing
+        my skills.<br></p2>
+        <br>
+        </div>
+    </div>
+    
+    <div class="container5">
+        <div class="column7">
+        <h2>Good design<br>
+        is long-lasting</h2>
+        <br>
+        <p2>a. It does not attempt to be trendy, so to never
+        be outdated.<br>
+        <br>
+        b. I’d say Apple headphones, I don’t think the design
+        has changed much over the years.<br>
+        <br>
+        c. I think I’d like to think my designs are long-lasting,
+        but usually after a week I cringe at my decisions.<br></p2>
+        </div>
+        <div class="column8">
+        <h2>Good design<br>
+        is thorough down<br>
+        to the last detail</h2>
+        <br>
+        <p2>a. Every small detail must be looked at and considered in the
+        design process.<br>
+        <br>
+        b. I don’t really know, I’d like to think all my products I own
+        went through a thorough design process.<br>
+        <br>
+        c. I think with every typography project I had to think about
+        <br></p2>
+        </div>        
+    </div>
+    
+    <div class="container6">
+        <div class="circle4"></div>          
+        <div class="triangle3"></div>    
+        <!--http://apps.eky.hk/css-triangle-generator/-->        
+        <div class="column9">
+        <h2>Good design<br>
+        is eco-friendly</h2>
+        <br>
+        <p2>a. Good design will not harm the environment, in the
+        process of making the product and after the product is
+        out of use.<br>
+        <br>
+        b. I have a set of bamboo utensils that are a better
+        alternative to plastic utensil.<br>
+        <br>
+        c. I don’t usually consider this principle or I haven’t
+        really had the chance to.
+        <br></p2>
+        </div>
+        <div class="column10">
+        <h2>Good design<br>
+        is as little design<br>
+        as possible</h2>
+        <br>
+        <p2>a. Keep it simple and don’t over design something.<br>
+        <br>
+        b.I own this small speaker, it has two buttons and that’s
+        about it. I think they did a good job keeping the form simple
+        and compact.<br>
+        <br>
+        c. A lot of the time when I’m working with typography I like
+        to think about this principle and remind myself to
+        keep it simple.    
+        <br> </p2>   
+        </div>
+        
+        
+        
+        
+        
+        
+        
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>
