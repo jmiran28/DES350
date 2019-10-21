@@ -2,22 +2,576 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>John-John Miranda / DES 350</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">    
+<title>github-midterm</title>
+<style>
+/* CSS Document */
+/* Reset browser default styles: */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+  list-style: none;
+}
+
+/* border-box so that border widths aren't added to the total width of the element: */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Clearfix to make floated elements behave correctly: */
+  .cf:before, .cf:after { content: ""; display: table; }
+  .cf:after { clear: both; }
+  .cf { zoom: 1; }
+
+/* In order for the percentage heights to work we need this: */
+html, body { height:100%; }   
+    
+
+    .box1{
+        background-color: #fff;
+        height:100vh;
+        overflow: ;
+    }    
+    
+    .box2{
+        background-color: white;
+        height:100vh;
+        position: relative;
+        overflow: hidden;
+    }      
+
+    .title{
+        background-color: transparent;
+        width:auto;
+        float:left;
+        height: auto;
+        
+        position: relative;
+        top: 50%;
+        left: 25%;
+        z-index: 100;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+            
+        font-family: 'Futura PT','Arial Black', 'sans-serif';
+        font-style: normal;
+        font-weight:900;
+        font-size:170px;
+        line-height: 174px;
+        font-kerning: none;
+    }
+    
+    .four{
+        -webkit-text-stroke-color:black;
+        -webkit-text-stroke-width:2px;
+        color:transparent;
+        padding-bottom: 20px;
+    }
+    
+    .rec1{
+        background-color: #000;
+        height:4px;
+        width:auto;
+    }
+    
+    .subtext{
+        font-family: 'Futura PT','Arial Black', 'sans-serif';
+        font-style: normal;
+        font-weight:700;        
+        
+        padding-top:10px;
+        font-size:24px;
+        line-height:30px;
+        
+    }
+    
+    .content{
+        background-color:transparent;
+        width:50%;
+        float:left;
+        height: 100%;
+        
+        position: relative;
+        top: 50%;
+        left: 75%;
+        z-index: 10;
+        margin-right: 50%;
+        transform: translate(-50%, -50%);
+        
+        font-family: 'Futura PT','Arial Black', 'sans-serif';
+        font-style: normal;
+        font-weight:600;
+        font-size:46px;
+        line-height: 55px;
+        font-kerning: none;        
+        
+    }
+    
+    .content-text{
+        background-color:transparent;
+        width:65%;
+        float:left;
+        height: auto;
+        
+        position: relative;
+        top: 50%;
+        left: 50%;
+        margin-right: 50%;
+        transform: translate(-50%, -50%);       
+    }
+    
+    a { text-decoration : none; color : #000; }
+    
+    
+    .ram, .essay{
+        font-weight: 500;
+        font-size:36px;
+        line-height: 40px;
+        margin-left: 0px;
+    }
+    
+    .rec2{
+        background-color: #000;
+        height:4px;
+        width:auto;
+        margin: 25px 0px 25px 0px;
+    }    
+    
+    .rec3{
+        background-color: #000;
+        height:4px;
+        width:auto;
+        margin: 25px 0px 25px 0px;
+    }    
+
+    .rec4{
+        background-color: #000;
+        height:4px;
+        width:auto;
+        margin: 25px 0px 25px 0px;
+    }     
+
+    .rec5{
+        background-color: #000;
+        height:4px;
+        width:auto;
+        margin: 25px 0px 25px 0px;
+    }      
+    
+ 
+    
+    .colorblock1{
+        background-color: transparent;
+        height:100px;
+        width:200px;
+        z-index: -100;
+        transform: rotate(-27deg);
+        -webkit-transform: rotate(-27deg); /* Safari */
+        -webkit-transition: width 4s, height 4s,top 4s, left 4s; /* For Safari 3.1 to 6.0 */
+        transition: width 4s, height 4s, top 4s, left 4s;        
+        
+        
+        position: absolute;
+        top:0;
+        left:-500%;
+        z-index: 10;   
+        display: none;
+        
+    }
+    
+    .html-calculator:hover  .colorblock1{
+        background-color: #FF9864;        
+            position: absolute;
+            width:10000px;
+            height:5000px;
+            top:-500%;
+            left:-250%;
+            transition-timing-function: ease-in-out;
+
+    }
+    
+    
+        span:hover + .html-calculator {
+          background-color: aqua;
+        height:200px;
+            width:30px;
+  display: block;
+    }
+
+    
+    
+    
+    
+:root {
+  --width: 160px;
+  --x-speed: 4s;
+  --y-speed: 3s;
+    
+}
+
+    .circle-wrap{
+        position: absolute;
+        top:0;
+        left:0;
+        z-index: 999;
+        animation:spin 4s linear infinite;
+
+    }
+    
+            @keyframes spin { 
+            100% { 
+                transform: rotate(180deg);
+        } 
+    }
+    
+    .circle { 
+        border-radius:400px;
+        width: var(--width);
+        height: var(--width);
+        background-color: #1fff1f;
+        position: absolute;
+        top:0;
+        left:0;
+        z-index: 99;
+        display: ;
+}
+    
+        .leye{
+            background-color: #000;
+            width: 14px;
+            height:14px;
+            border-radius: 100px;
+            position: absolute;
+            z-index: 10;
+            float:left;
+            top:40px;
+            left:45px;
+            
+        }
+        
+        .reye{
+            background-color: #000;
+            width: 14px;
+            height:14px;
+            border-radius: 100px;
+            position: absolute;
+            z-index: 10;
+            float:left;
+            top:40px;
+            left:100px;
+            
+        }
+        
+        .mouth{
+			background-color:transparent;
+            color:transparent;
+            float: left;
+            position:absolute;
+            z-index: 4;
+			width: 100px;
+			height: 100px;
+			border-radius: 140px;
+            top:30px;
+            left:30px;
+            border:solid 10px black;
+            
+        }
+        
+        .cover{
+            background-color: #1fff1f;
+            float:left;
+            width:120px;
+            height:67px;
+            position:absolute;
+            top:30px;
+            left:20px;
+            z-index: 5;
+        }
+    
+.circle-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+z-index: 99;
+    -webkit-user-select: none;
+}
+    
+    
+    .des{
+        width:400px;
+        background-color: #2d3dad;
+        color:#ff4aa9;
+        margin-left:-50%;  
+        
+    }
+    
+
+    .circle-2 .circle {
+        overflow: hidden;    
+        background: #2d3dad;
+        text-align:center;
+        font-family:"Eczar";
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 21px;
+        padding-top:px;
+        animation:spin 4s linear infinite;
+
+    }
+    
+    .circle-2{
+        display: none;
+    }
+    
+        .x {
+          animation: x var(--x-speed) linear infinite alternate;
+        }
+        .x2 {
+          animation: x2 var(--x-speed) linear infinite alternate;
+        }
+        .y {
+          animation: y var(--y-speed) linear infinite alternate;
+        }
+
+    
+        @keyframes x {
+          100% {
+            transform: translateX(calc(100vw - var(--width)));
+
+          }
+        }
+        @keyframes x2{
+          100% {
+            transform: translateX(calc(-100vw + var(--width)));
+          }
+        }
+
+        @keyframes y {
+          100% {
+            transform: translateY(calc(100vh - var(--width)));
+
+          }
+        }
+    
+    
+        @keyframes y2 {
+          100% {
+            transform: translateY(calc(-100vh - var(--width)));
+          }
+        }
+
+ 
+    
+    .hello{
+        background-color: transparent;
+        height:auto;
+        width:50%;
+        float:left;
+        top:-1000vh;
+        overflow: hidden;
+        
+        font-family: 'Futura PT','Arial Black', 'sans-serif';
+        font-style: normal;
+        font-weight:600;
+        font-size:240px;
+        line-height: 254px;
+        font-kerning: none; 
+        text-align: center;
+        
+        display: none;
+        
+
+  background: ;
+  position: absolute;
+        
+        
+  -webkit-animation: mymove 5s;  /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite ; /* Safari 4.0 - 8.0 */
+  animation: mymove 5s;
+  animation-iteration-count: infinite;
+animation-timing-function:linear;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  from {top: -500vh;}
+  to {top: 100vh;}0
+}
+
+@keyframes mymove {
+  from {top: -500vh;}
+  to {top: 100vh;}
+    
+    }
+    
+
+    
+    
+    
+    .about{
+        background-color:;
+        width:auto;
+        float:left;
+        height: auto;
+        
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        
+        font-family: 'Futura PT','Arial Black', 'sans-serif';
+        font-style: normal;
+        font-weight:600;
+        font-size:170px;
+        line-height: 174px;
+        font-kerning: none;        
+        
+    }
+    
+    .rec6{
+        background-color: #000;
+        height:10px;
+        width:auto;
+        margin: 0px 0px 25px 0px;
+    }  
+    
+    .aboutme{
+        font-size:82px;
+        line-height: 84px;
+        font-weight: 300;
+    }
+    
+    
+    
+    
+    
+        .helloo{
+        background-color: ;
+        height:auto;
+        width:auto;
+        float:left;
+            
+            
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);            
+        
+        font-family: 'Futura PT','Arial Black', 'sans-serif';
+        font-style: normal;
+        font-weight:600;
+        font-size:240px;
+        line-height: 254px;
+        font-kerning: none; 
+        text-align: center;
+        
+  
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+</style>    
 </head>
 
 <body>
-	<strong>John-John Miranda / DES 350</strong> <br>
-	<a href= "calculator.html" target="_self"> CSS Calculator</a><br>
-	<a href= "drams-calculator-05.jpg" target="_self"> Rams calculator</a><br>
-	<a href= "dr-calculator.html" target="_self"> Rams calculator html </a><br>
-	<br>
-	<a href= "essaystyle.html" target="_self"> Dieter Rams Essay</a><br>
-	<a href= "dm4-webposter.pdf" target="_self">Poster</a><br>
-	<a href= "responsive-webposter.html" target="_self">Responsive Poster</a><br>
-	<br>
-	<a href= "DOG2-02.jpg" target="_self">Portraits</a><br>
-	<a href= "dm4-cssportrait.html" target="_self">CSS Portrait</a><br>
-	<br>
-	<a href= "portfoliosites.html" target="_self">Portfolio Websites</a><br>
+    <div class="box1">
+        <div class="title"> DIGITAL<br> MEDIA<br> DESIGN<br> 
+        <div class="four">FOUR</div>
+        <div class="rec1"></div>    
+        <div class="subtext">MICHAL JANICKI<br>4:00 PM - 6:40 PM<br>MONDAYS + WEDNESDAY<br>ROOM 2340 </div>
+        </div>
+        <div class="content">
+        <div class="content-text">
+        <div class="project5">Final Assignment</div>            
+        <div class="rec2"></div>
+        <div class="Portfolios"><a href="" target="_self">Portfolios</a></div>            
+        <div class="rec3"></div>
+        <div class="HTML-Portrait"><a href="dm4-cssportrait.html" target="_self">HTML Portrait</a></div>
+        <div class="rec4"></div>
+        <div class="web-poster"><a href="responsive-webposter.html" target="_self">Web-Based poster</a>
+            <div class="essay"><a href="essaystyle.html" target="_self">Dieter Rams Essay</a></div>
+            </div>
+        <div class="rec5"></div>
+        <div class="html-calculator"><a href="calculator.html" target="_self"> HTML Calculator</a>
+            <div class="colorblock1"></div>
+            <div class="ram"><a href="" target="_self">Calculator Based on the work of Dieter Rams</a></div>
+            </div>            
+
+            
+        </div>
+
+        
+        
+        
+        </div>
+        
+
+<div class="circle-wrap x">
+  <div class="circle y">
+    
+        <div class="leye"></div>
+        <div class="reye"></div>
+        
+        <div class="cover"></div>
+        <div class="mouth"></div>
+
+    
+            
+    
+    </div>
+
+    
+</div>
+
+<div class="circle-wrap circle-2 x2"> 
+  <div class="circle y"><div class="des">
+        DES350 DES350 DES350 DES350<br>
+        DES350 DES350 DES350 DES350 DES350<br>
+        DES350 DES350 DES350 DES350<br>
+        DES350 DES350 DES350 DES350 DES350<br>
+        DES350 DES350 DES350 DES350<br>
+        DES350 DES350 DES350 DES350 DES350<br>
+        DES350 DES350 DES350 DES350<br>
+        DES350 DES350 DES350 DES350 DES350<br>
+        DES350 DES350 DES350 DES350</div></div>
+</div>
+
+        
+        
+        
+    </div>    
+    
+    <div class="box2">
+        <div class="hello">hello<br>hello<br>hello<br>hello<br>hello<br>hello<br>hello<br>hello<br>hello<br>hello
+        </div>
+         <div class="helloo">hello!</div> 
+
+        <div class="about">About
+            <div class="rec6"></div>
+            <div class="aboutme">
+            This is The about page,<br> 
+            where you can learn <br>
+            more about me. 
+            </div>
+        </div>    
+    
+    </div>      
+    
+    
+    
 </body>
 </html>
