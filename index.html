@@ -131,7 +131,7 @@ html, body { height:100%; }
     a { text-decoration : none; color : #000; }
     
     
-    .ram, .essay{
+    .ram, .essay, .sketches{
         font-weight: 500;
         font-size:36px;
         line-height: 40px;
@@ -169,14 +169,14 @@ html, body { height:100%; }
  
     
     .colorblock1{
-        background-color: #FF9864;
+        background-color: transparent;
         height:5000px;
         width:15000px;
         z-index: -100;
         transform: rotate(-27deg);
         -webkit-transform: rotate(-27deg); /* Safari */
-        -webkit-transition: width 4s, height 4s,top 4s, left 4s; /* For Safari 3.1 to 6.0 */
-        transition: width 4s, height 4s, top 4s, left 4s;        
+        -webkit-transition: width 1s, height 1s,top 1s, left 1s; /* For Safari 3.1 to 6.0 */
+        transition: width 1s, height 1s, top 1s, left 1s;        
         
         
         position: absolute;
@@ -205,8 +205,8 @@ html, body { height:100%; }
         z-index: -100;
         transform: rotate(41deg);
         -webkit-transform: rotate(41deg); /* Safari */
-        -webkit-transition: width 4s, height 4s,top 4s, left 4s; /* For Safari 3.1 to 6.0 */
-        transition: width 4s, height 4s, top 4s, left 4s;        
+        -webkit-transition: width 2s, height 2s,top 2s, left 2s; /* For Safari 3.1 to 6.0 */
+        transition: width 2s, height 2s, top 2s, left 2s;        
         
         
         position: absolute;
@@ -228,6 +228,99 @@ html, body { height:100%; }
 
     }    
     
+      
+    .colorblock3{
+        background-color: #5670DB;
+        height:10000px;
+        width:15000px;
+        z-index: -100;
+        transform: rotate(61deg);
+        -webkit-transform: rotate(61deg); /* Safari */
+        -webkit-transition: width 2s, height 2s,top 2s, left 2s; /* For Safari 3.1 to 6.0 */
+        transition: width 2s, height 2s, top 2s, left 2s;        
+        
+        
+        position: absolute;
+        top:0;
+        left:500%;
+        z-index: -100;   
+        display: ;
+        
+    }
+    
+    .HTML-Portrait:hover  .colorblock3{
+        background-color: #5670DB;        
+            position: absolute;
+            width:15000px;
+            height:10000px;
+            top:-500%;
+            left:-450%;
+            transition-timing-function: ease-in-out;
+
+    }  
+    
+    
+        .colorblock4{
+        background-color: #DB3353;
+        height:10000px;
+        width:15000px;
+        z-index: -100;
+        transform: rotate(11deg);
+        -webkit-transform: rotate(11deg); /* Safari */
+        -webkit-transition: width 2s, height 2s,top 2s, left 2s; /* For Safari 3.1 to 6.0 */
+        transition: width 2s, height 2s, top 2s, left 2s;        
+        
+        
+        position: absolute;
+        top:0;
+        left:500%;
+        z-index: -100;   
+        display: ;
+        
+    }
+    
+    .Portfolios:hover  .colorblock4{
+        background-color: #DB3353;        
+            position: absolute;
+            width:15000px;
+            height:10000px;
+            top:-500%;
+            left:-450%;
+            transition-timing-function: ease-in-out;
+
+    }  
+    
+        .colorblock5{
+        background-color: #FFCF48;
+        height:10000px;
+        width:15000px;
+        z-index: -100;
+        transform: rotate(-20deg);
+        -webkit-transform: rotate(-20deg); /* Safari */
+        -webkit-transition: width 2s, height 2s,top 2s, left 2s; /* For Safari 3.1 to 6.0 */
+        transition: width 2s, height 2s, top 2s, left 2s;        
+        
+        
+        position: absolute;
+        top:0;
+        left:500%;
+        z-index: -100;   
+        display: ;
+        
+    }
+    
+    .project5:hover  .colorblock5{
+        background-color: #FFCF48;        
+            position: absolute;
+            width:15000px;
+            height:10000px;
+            top:-500%;
+            left:-450%;
+            transition-timing-function: ease-in-out;
+
+    }  
+    
+
     
 :root {
   --width: 160px;
@@ -517,11 +610,18 @@ animation-timing-function:linear;
         </div>
         <div class="content">
         <div class="content-text">
-        <div class="project5">Final Assignment</div>            
+        <div class="project5"><a href=".html" target="_self">Olympic National Park</a>
+            <div class="colorblock5"></div>                        
+            <div class="sketches"><a href="sketch.jpg" target="_self">Sketches</a></div>
+            </div>            
         <div class="rec2"></div>
-        <div class="Portfolios"><a href="portfoliosites.html" target="_self">Portfolios</a></div>            
+        <div class="Portfolios"><a href="portfoliosites.html" target="_self">Portfolios</a>
+            <div class="colorblock4"></div>            
+            </div>            
         <div class="rec3"></div>
-        <div class="HTML-Portrait"><a href="dm4-cssportrait.html" target="_self">HTML Portrait</a></div>
+        <div class="HTML-Portrait"><a href="dm4-cssportrait.html" target="_self">HTML Portrait</a>
+            <div class="colorblock3"></div>            
+            </div>
         <div class="rec4"></div>
         <div class="web-poster"><a href="responsive-webposter.html" target="_self">Web-Based poster</a>
             <div class="colorblock2"></div>
