@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>    
+<meta charset="UTF-8">
+<title>lab11/4</title>
+</head>
+<style>
+    
+    body{background-color:#000;
+    margin:0px;
+    padding:0px;}
+    
+    .card{
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%, -50%);
+        width:40%;
+        height:90vh;
+        background: url("lab11%3A4/olympic_np-poster.jpg") no-repeat center;
+        background-size: contain;
+    }
+    
+    .card:hover{
+        background:url("olympic-poster.gif") no-repeat center;
+        background-size:contain;
+    }
+    
+    #preload{
+        background:url("olympic-poster.gif") no-repeat -9999px -9999px;
+
+    }
+</style>
+<body>
+    
+    <div id="preload"></div>
+    <div class="card"></div>
+    
+</body>
+</html>
