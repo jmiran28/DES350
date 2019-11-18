@@ -1,0 +1,269 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Olympic National Park</title>
+</head>
+<style>
+    
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+    
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain) */    
+    
+
+    .header{
+        background-color: transparent;
+        background-image: url();
+        height:100vh;
+        overflow: hidden;
+    }        
+    
+    .box2{
+        background-color: pink;
+        height:100vh;
+        overflow: hidden;
+    }        
+    
+    .box3{
+        background-color: olive;
+        height:100vh;
+        overflow: hidden;
+    }        
+    
+    .box4{
+        background-color: yellowgreen;
+        height:100vh;
+        overflow: hidden;
+    }        
+    
+
+    
+    .sky{
+		position:absolute;
+			left:20%;
+			top:-40%;
+			transform: translate(0%, 0%);
+			width:;
+			height:;
+			        overflow: hidden;
+
+		z-index: 0;
+			}
+    
+        .water{
+		position:absolute;
+			left:20%;
+			top:50%;
+			transform: translate(0%, 0%);
+			width:;
+			height:;
+			
+		z-index:-1;
+			}
+    
+       .trees{
+		position:absolute;
+			left:20%;
+			top:40%;
+			transform: translate(0%, 0%);
+			width:;
+			height:;
+			
+		z-index:7;
+			}
+        
+    
+           .mountain1{
+		position:absolute;
+			left:40%;
+			top:53%;
+			transform: translate(0%, 0%);
+			width:;
+			height:;
+			
+		z-index:5;
+			}
+    
+    
+           .mountain2{
+		position:absolute;
+			left:20%;
+			top:25%;
+			transform: translate(0%, 0%);
+			width:;
+			height:;
+			
+		z-index:3;
+			}    
+    
+           .mountain3{
+		position:absolute;
+			left:39.2%;
+			top:35%;
+			transform: translate(0%, 0%);
+			width:;
+			height:;
+			
+		z-index:2;
+			}        
+    
+           .mountain4{
+		position:absolute;
+			left:67.2%;
+			top:40.5%;
+			transform: translate(0%, 0%);
+			width:;
+			height:;
+			
+		z-index:1;
+			}        
+        
+    
+    
+</style>
+<body>
+    
+    
+    <div class="header">
+    <div class= "sky" data-rellax-speed="">
+        <img src="svg/sky.svg" alt="sky">
+    </div>
+    <div class= "water" data-rellax-speed="">
+        <img src="svg/water.svg" alt="water">
+    </div>
+    <div class="trees">
+        <img src="svg/trees.svg" alt="trees">
+    </div>    
+        
+            <div class="mountain1">
+        <img src="svg/mountain1.svg" alt="trees">
+    </div>   
+        
+     <div class="mountain2">
+        <img src="svg/mountain2.svg" alt="trees">
+    </div> 
+        
+     <div class="mountain3">
+        <img src="svg/mountain3.svg" alt="trees">
+    </div>         
+        
+     <div class="mountain4">
+        <img src="svg/mountain4.svg" alt="trees">
+    </div>          
+        
+        
+        
+    </div>    
+        
+        
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="rellax.js"></script>
+
+    <!-- javascript by Dixon and Moe-->
+    <script type="text/javascript" src="rellax.js"></script>
+    <script>
+    	var rellax = new Rellax('.rellax', {
+        // center: true
+        callback: function(position) {
+            // callback every position change
+            console.log(position);
+        }
+      });
+    </script>        
+    
+</body>
+</html>
