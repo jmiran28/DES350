@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Olympic National Park</title>
-</head>
+<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:500&display=swap" rel="stylesheet"></head>
 <style>
     
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -60,12 +60,21 @@ table {
    License: none (public domain) */    
     
 
+    
+    
     .header{
         background-color: transparent;
-        background-image: url();
-        height:100vh;
-        overflow: hidden;
+        height:105vh;
+        width:100vw;
+        overflow:hidden;
+        z-index: ;
+
     }        
+    
+    .box1{
+        background-color: #271D5A;
+        height:100vh;
+    } 
     
     .box2{
         background-color: pink;
@@ -83,90 +92,104 @@ table {
         background-color: yellowgreen;
         height:100vh;
         overflow: hidden;
-    }        
+    }  
     
+    
+        .box5{
+        background-color: red;
+        height:100vh;
+        overflow: hidden;
+    }  
+    
+    
+    .olympic{
+ 		position:absolute;
+        left:35%;
+        top:05%;
+        
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight:500;
+        font-size:200px;
+        color:#fff;
+
+		z-index: -26;
+        display: ;
+			}
 
     
-    .sky{
-		position:absolute;
-			left:20%;
-			top:-40%;
-			transform: translate(0%, 0%);
-			width:;
-			height:;
-			        overflow: hidden;
-
-		z-index: 0;
-			}
     
-        .water{
+    ]
+       .number1{
 		position:absolute;
-			left:20%;
-			top:50%;
-			transform: translate(0%, 0%);
-			width:;
-			height:;
-			
-		z-index:-1;
-			}
-    
-       .trees{
-		position:absolute;
-			left:20%;
-			top:40%;
-			transform: translate(0%, 0%);
-			width:;
-			height:;
-			
+    	left:;
+    	top:0%;
+        transform: (0%, 0%);
+        width:100;
+        height:auto;        
 		z-index:7;
 			}
         
     
-           .mountain1{
+    .number2{
 		position:absolute;
-			left:40%;
-			top:53%;
-			transform: translate(0%, 0%);
-			width:;
-			height:;
-			
-		z-index:5;
+		left:0%;
+        top:0%;
+        transform: (0%, 0%);
+    	width:100%;
+    	height:auto;
+    	display:;
+		
+		z-index:-1;
 			}
     
     
-           .mountain2{
+           .number3{
 		position:absolute;
-			left:20%;
-			top:25%;
+			left:0%;
+			top:0%;
 			transform: translate(0%, 0%);
-			width:;
-			height:;
-			
-		z-index:3;
+			width:100%;
+			height:auto;
+			display:;
+
+		z-index:-40;
 			}    
     
-           .mountain3{
+           .number4{
 		position:absolute;
-			left:39.2%;
-			top:35%;
-			transform: translate(0%, 0%);
-			width:;
-			height:;
-			
-		z-index:2;
+		left:0%;
+		top:0%;
+		transform: translate(0%, 0%);
+		width:100%;
+    	height:auto;
+        display:;
+
+		z-index:-45;
 			}        
     
-           .mountain4{
+           .number5{
 		position:absolute;
-			left:67.2%;
-			top:40.5%;
+			left:;
+			top:0%;
 			transform: translate(0%, 0%);
-			width:;
-			height:;
-			
-		z-index:1;
+			width:100%;
+			height:auto;
+			display:;
+		z-index:-25;
 			}        
         
+           .sky{
+		position:absolute;
+			left:;
+			top:0%;
+			width:100vw;
+			height:100vh;
+			display:;
+            background-color: #3A2D7B;
+		z-index:-100;
+			}      
+    
+    
     
     
 </style>
@@ -174,40 +197,42 @@ table {
     
     
     <div class="header">
-    <div class= "sky" data-rellax-speed="">
-        <img src="svg/sky.svg" alt="sky">
-    </div>
-    <div class= "water" data-rellax-speed="">
-        <img src="svg/water.svg" alt="water">
-    </div>
-    <div class="trees">
-        <img src="svg/trees.svg" alt="trees">
+        
+    <div class="olympic rellax" data-rellax-speed="-09" style="transform: translate3d(0px, 40px, 0px);"> OLYMPIC </div>         
+  
+
+
+    <div class="number1 rellax" data-rellax-speed="-1" style="transform: translate3d(0px, 50px, 0px);">
+        <img src="Number1.svg" alt="trees">
     </div>    
         
-            <div class="mountain1">
-        <img src="svg/mountain1.svg" alt="trees">
+            <div class="number2 rellax" data-rellax-speed="-1" style="transform: translate3d(0px, 50px, 0px);">
+        <img src="Number2.svg" alt="trees">
     </div>   
         
-     <div class="mountain2">
-        <img src="svg/mountain2.svg" alt="trees">
+     <div class="number3 rellax" data-rellax-speed="-1" style="transform: translate3d(0px, 50px, 0px);">
+        <img src="Number3.svg" alt="trees">
     </div> 
         
-     <div class="mountain3">
-        <img src="svg/mountain3.svg" alt="trees">
+     <div class="number4 rellax" data-rellax-speed="1" style="transform: translate3d(0px, 50px, 0px);">
+        <img src="Number4.svg" alt="trees">
     </div>         
         
-     <div class="mountain4">
-        <img src="svg/mountain4.svg" alt="trees">
+     <div class="number5 rellax" data-rellax-speed=".5" style="transform: translate3d(0px, 80px, 0px);">
+        <img src="Number5.svg" alt="trees">
     </div>          
-        
-        
+        <div class="sky"></div>    
         
     </div>    
         
+
         
+    <div class="box1"></div>
     <div class="box2"></div>
     <div class="box3"></div>
     <div class="box4"></div>
+    <div class="box5"></div>
+
     
     
     
