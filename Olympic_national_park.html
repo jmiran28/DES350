@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Olympic National Park</title>
-<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:500&display=swap" rel="stylesheet"></head>
+<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:500,800&display=swap" rel="stylesheet">
+</head>
 <style>
     
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -60,59 +61,551 @@ table {
    License: none (public domain) */    
     
 
-    
+    html{background-color: #2D419B}
     
     .header{
-        background-color: transparent;
+        background-imag url(newsky.svg);
+        background-repeat: no-repeat;
+        background-size:cover;
         height:105vh;
         width:100vw;
         overflow:hidden;
-        z-index: ;
+        z-index:-56;
 
     }        
     
-    .box1{
-        background-color: #271D5A;
-        height:100vh;
+    .funfact{
+        background-image: url("funfacts-03.svg");
+        background-repeat: no-repeat;
+        background-size:cover;
+        height:110vh;
+        overflow: hidden;
+    }        
+    
+    .funfact img {
+        height:110vh;
+        width:110vw;
+        margin-top:;
+    }
+    
+    
+    .cta{
+        background-color:#2D419B;
+        height: 25vh;
+        width: 100vw;
+
+    } 
+        
+    
+    .gif1{
+        background-color:red;
+        height: 25vh;
+        width: 100vw;
+
+        background: url("comeexplore!.jpg") no-repeat center;
+        background-size: contain;
     } 
     
-    .box2{
-        background-color: pink;
-        height:100vh;
-        overflow: hidden;
-    }        
     
-    .box3{
-        background-color: olive;
-        height:100vh;
-        overflow: hidden;
-    }        
     
-    .box4{
-        background-color: yellowgreen;
+
+    
+    .gif1:hover{
+        background:url(comeexplore!.gif) no-repeat center;
+        background-size:contain;
+    }
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .thingstodo{
+        background-color: #3C57CE;
+        height:110vh;
+        width: 100vw;        
+        overflow: hidden;
+        font-size:20vw;
+        font-family: 'Barlow Condensed', sans-serif;
+        color:#fff;
+        
+
+    }       
+    
+
+    .things{
+        margin:0 auto;
+        width:75vw;
+        background-color: transparent;
+        font-weight:500;
+			transform:translate(0%, 50%);
+
+
+  
+        }
+    
+    .todo{
+        text-align: right;
+        font-weight: 800;
+    }
+    
+    
+    
+    
+    
+    
+    .backpacking{
+        background-color: #fff;
         height:100vh;
         overflow: hidden;
+        font-family: 'Barlow Condensed', sans-serif;
+        
     }  
     
     
-        .box5{
-        background-color: red;
+
+    
+    .backpacking_header{
+        font-weight:800;
+        font-size:8vw;
+        font-kerning: none;
+        background-color: transparent;
+        width:41vw;
+        float:left;
+        height: auto;
+        
+        position: relative;
+        top: 50%;
+        left: 25%;
+        z-index: 100;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        color:#2D419B;
+    }
+    
+    #backpacking_content{
+        color:#2D419B;
+        font-family:'helvetica', sans-serif;
+        font-size:1.5vw;
+        font-weight: 500;
+        text-align: left;
+        background-color: transparent;
+        width:90%;
+        height:auto;
+        line-height: 1.2em;
+        margin-top:5%;
+        
+        
+    } 
+    
+    .backpacking_illustration{
+           background-color:#fff;
+        width:50%;
+        float:left;
+        height: 100%;
+        
+        position: relative;
+        top: 65%;
+        left: 65%;
+        z-index: 10;
+        margin-right: 50%;
+        transform: translate(-50%, -50%);
+        
+        
+        
+    }
+    
+    .backpacking_illustration img{
+        width:AUTO;
+        height:65vh;
+    }
+    
+    
+    .boating{
+        background-color: #fff;
         height:100vh;
         overflow: hidden;
+        font-family: 'Barlow Condensed', sans-serif;
+        
     }  
+    
+    
+
+    
+    .boating_header{
+        font-weight:800;
+        font-size:10vw;
+        font-kerning: none;
+        background-color: transparent;
+        width:34vw;
+        float:left;
+        height: auto;
+        
+        position: relative;
+        top: 50%;
+        left: 75%;
+        z-index: 100;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        color:#2D419B;
+    }
+    
+    #boating_content{
+        color:#2D419B;
+        font-family:'helvetica', sans-serif;
+        font-size:1.5vw;
+        font-weight: 500;
+        text-align: left;
+        background-color: transparent;
+        width:90%;
+        height:auto;
+        line-height: 1.2em;
+        margin-top:5%;
+        
+        
+    } 
+    
+    .boating_illustration{
+        background-color:#fff;
+        width:50%;
+        float:left;
+        height: 100%;
+        
+        position: relative;
+        top: 90%;
+        left: 25%;
+        z-index: 10;
+        margin-right: 50%;
+        transform: translate(-50%, -50%);
+        
+        
+        
+    }
+    
+    .boating_illustration img{
+        width:50vw;
+        height:auto;
+    }
+    
+    .camping{
+        background-color: #3C57CE;
+        height:100vh;
+        overflow: hidden;
+        font-family: 'Barlow Condensed', sans-serif;
+        
+    }  
+    
+    
+
+    
+    .camping_header{
+        font-weight:800;
+        font-size:10vw;
+        font-kerning: none;
+        background-color: #3C57CE;
+        width:41vw;
+        float:left;
+        height: auto;
+        
+        position: relative;
+        top: 50%;
+        left: 25%;
+        z-index: 100;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        color:#FEE033;
+    }
+    
+    #camping_content{
+        color:#fff;
+        font-family:'helvetica', sans-serif;
+        font-size:1.5vw;
+        font-weight: 500;
+        text-align: left;
+        background-color: #;
+        width:90%;
+        height:auto;
+        line-height: 1.2em;
+        margin-top:5%;
+        
+        
+    } 
+    
+    .camping_illustration{
+        background-color:#3C57CE;
+        width:50%;
+        float:left;
+        height: 100%;
+        
+        position: relative;
+        top: 50%;
+        left: 75%;
+        z-index: 10;
+        margin-right: 50%;
+        transform: translate(-50%, -50%);
+        
+        
+        
+    }
+    
+    .camping_illustration img{
+        width:50vw;
+        height:100vh;
+    }    
+    
+    
+    
+    .fishing{
+        background-color: #fff;
+        height:100vh;
+        overflow: hidden;
+        font-family: 'Barlow Condensed', sans-serif;
+        
+    }  
+    
+    
+
+    
+    .fishing_header{
+        font-weight:800;
+        font-size:10vw;
+        font-kerning: none;
+        background-color: transparent;
+        width:34vw;
+        float:left;
+        height: auto;
+        
+        position: relative;
+        top: 50%;
+        left: 75%;
+        z-index: 100;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        color:#2D419B;
+    }
+    
+    #fishing_content{
+        color:#2D419B;
+        font-family:'helvetica', sans-serif;
+        font-size:1.5vw;
+        font-weight: 500;
+        text-align: left;
+        background-color: transparent;
+        width:95%;
+        height:auto;
+        line-height: 1.2em;
+        margin-top:5%;
+        
+        
+    } 
+    
+    .fishing_illustration{
+        background-color:#fff;
+        width:50%;
+        float:left;
+        height: 100%;
+        
+        position: relative;
+        top: 55%;
+        left: 25%;
+        z-index: 10;
+        margin-right: 50%;
+        transform: translate(-50%, -50%);
+        
+        
+        
+    }
+    
+    .fishing_illustration img{
+        width:75vw;
+        height:100vh;
+    }    
+    
+    .wildlifeviewing{
+        background-color: #3C57CE;
+        height:100vh;
+        overflow: hidden;
+        font-family: 'Barlow Condensed', sans-serif;
+        
+    }  
+    
+    
+
+    
+    .wildlifeviewing_header{
+        font-weight:800;
+        font-size:9.5vw;
+        line-height:.8em;
+        font-kerning: none;
+        background-color: transparent;
+        width:41vw;
+        float:left;
+        height: auto;
+        
+        position: relative;
+        top: 50%;
+        left: 25%;
+        z-index: 100;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        color:#FEE033;
+    }
+    
+    #wildlifeviewing_content{
+        color:#fff;
+        font-family:'helvetica', sans-serif;
+        font-size:1.5vw;
+        font-weight: 500;
+        text-align: left;
+        background-color: transparent;
+        width:90%;
+        height:auto;
+        line-height: 1.2em;
+        margin-top:5%;
+        
+        
+    } 
+    
+    .wildlifeviewing_illustration{
+        background-color:#3C57CE;
+        width:50%;
+        float:left;
+        height: 100%;
+        
+        position: relative;
+        top: 50%;
+        left: 75%;
+        z-index: 10;
+        margin-right: 50%;
+        transform: translate(-50%, -50%);
+        
+        
+        
+    }
+    
+    .wildlifeviewing_illustration img{
+        width:50vw;
+        height:100vh;
+    }    
+    
+    
+    
+    
+    
+    
+    
+    
+    .info{
+        background-color: #2D419B;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height:110vh;
+        overflow: hidden;
+    }      
+    
+    .address{
+        font-size:11vw;
+        font-family: 'Barlow Condensed', sans-serif;
+        color:#fff;
+        font-weight: 500;
+        margin:0 10%; 
+        margin-top:10%;
+        
+    }
+    
+    
+    .lola{
+        font-family: 'helvetica', sans-serif;
+        font-weight:bold;
+        font-size:3vw;
+        line-height: 10em;
+        
+        
+        
+        
+    }
+    
+    .ctatwo{
+        background-color:#00756F;
+        height: 25vh;
+        width: 100vw;
+
+    } 
+        
+    
+    .gif2{
+        background-color:red;
+        height: 25vh;
+        width: 100vw;
+
+        background: url("comeexplore!2.jpg") no-repeat center;
+        background-size: contain;
+    } 
+    
+    
+    
+
+    
+    .gif2:hover{
+        background:url(comeexplore!2.gif) no-repeat center;
+        background-size:contain;
+    }
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     .parks{
+        background-color: #00A2E7;
+        height:95vh;
+        overflow: hidden;
+    }      
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     .olympic{
  		position:absolute;
-        left:35%;
-        top:05%;
+        left:28%;
+        top:15%;
         
         font-family: 'Barlow Condensed', sans-serif;
         font-weight:500;
-        font-size:200px;
+        font-size:15vw;
         color:#fff;
 
-		z-index: -26;
+		z-index: -99;
         display: ;
 			}
 
@@ -121,11 +614,11 @@ table {
     ]
        .number1{
 		position:absolute;
-    	left:;
+    	left:0;
     	top:0%;
-        transform: (0%, 0%);
-        width:100;
-        height:auto;        
+        transform: (100%, 100%);
+        width:100%;
+        height:%;        
 		z-index:7;
 			}
         
@@ -175,7 +668,7 @@ table {
 			width:100%;
 			height:auto;
 			display:;
-		z-index:-25;
+		z-index:-55;
 			}        
         
            .sky{
@@ -185,9 +678,253 @@ table {
 			width:100vw;
 			height:100vh;
 			display:;
-            background-color: #3A2D7B;
+            background-color:;
 		z-index:-100;
 			}      
+    
+.parks {background-color:#2D419B;
+font-family: Helvetica, Arial, sans-serif; 
+line-height: 1.4em;
+width: 100vw;
+padding-left: 0%;
+marrgin:0 auto;
+padding-top: 170px;}
+    
+.leftcolumn {
+	display:inline-block;
+	float:left;
+	width: 21%;
+    padding-right: 2%;
+    padding-left:17%;
+		overflow: hidden;
+}
+	
+.midcolumn {
+	display:inline-block;
+	float:left;
+	width: 21%;
+    padding-right: 2%;
+}
+	
+	
+.rightcolumn {
+	display:inline-block;
+	float:left;
+	width: 21%;
+    padding-right: 2%;
+}
+	
+	
+h1   {color: #fff;
+	font-size: 5vw;
+	letter-spacing: -2px;
+	line-height: 1.1em;
+    margin-left:10%;
+    padding-bottom: 140px;
+    
+    }
+
+
+a {
+  color: black;
+}
+	
+a:hover {
+  text-decoration: none;
+	color: #ff4b2e;
+}	
+	
+
+	
+p    {color: black;}
+	
+	
+
+        @media screen and (min-width:601px) and (max-width: 992px) {
+          html {
+        background-color: #2D419B;
+      }
+            .header{
+                height:25vh;
+            }
+            .funfact{
+                height:50vh;
+        background-repeat: no-repeat;
+        background-size:cover;
+        overflow: hidden;
+    }        
+                
+                
+        
+            
+    .funfact img {
+        height:50vh;
+        width:50vh;
+        margin-top:;
+    }
+            
+            
+            
+            .thingstodo{
+                height:40vh;
+            }
+    
+            .olympic{
+                top:5%;
+            }
+    
+            
+            .backpacking{
+                height:25vh;
+            }
+            .backpacking_header{
+                margin-left:20%;
+                font-size: 12vw;
+                                width:70%;
+
+            }
+            #backpacking_content{
+                font-size: 2vw;
+            }
+            
+            .boating{
+                height:25vh;
+            }
+        .boating_header{
+                margin-left:-30%;
+                font-size:12vw;
+            width:70%;
+            }
+            
+                .camping{
+                height:25vh;
+            }
+            .camping_header{
+                margin-left:20%;
+                font-size: 12vw;
+                                width:70%;
+
+            }
+            #camping_content{
+                font-size: 2vw;
+            }            
+            
+            .fishing{
+                height:25vh;
+            }
+            .fishing_header{
+                margin-left:-30%;
+                font-size: 12vw;
+                                width:70%;
+
+            }
+            #fishing_content{
+                font-size: 2vw;
+            }
+            
+                        .wildlifeviewing{
+                height:25vh;
+            }
+            .wildlifeviewing_header{
+                margin-left:20%;
+                font-size: 12vw;
+                                width:70%;
+
+            }
+            #wildlifeviewing_content{
+                font-size: 2vw;
+            }
+            
+            .info{
+                height:25vh;
+            }
+            
+            .address{
+                font-size:7vw;
+            }
+            
+            .parks{
+                height:45vh;
+            }
+            
+            
+            .boating_illustration{
+                display:none;
+            }
+            
+                        .backpacking_illustration{
+                display:none;
+            }
+            
+            .camping_illustration{
+                display:none;
+            }
+                        
+            
+                  .fishing_illustration{
+                display:none;
+            }
+                  
+                   .wildlifeviewing_illustration{
+                display:none;
+            }
+                 
+            
+    }
+    
+    
+    @media screen and (min-width:1000px) {
+        .header{
+            height:80vh;
+            
+        }
+        
+        .boating{
+            height:85vh;
+        }
+        
+        .fishing{
+            height:92vh;
+            
+        }
+        
+        
+        
+    }
+    
+    
+	
+@media only screen and (max-width: 700px) {
+.leftcolumn {
+	display:block;
+    border: none;
+	width: 98%;
+    padding-right: 2%;
+}
+	
+.midcolumn {
+	display:block;
+    border: none;
+	width: 98%;
+    padding-right: 2%;
+}	
+	
+.rightcolumn {
+	display:block;
+	border:none;
+	width: 98%;
+    padding-left:0px;
+    padding-right:2%;
+}
+	
+	
+	
+}    
+    
+    
+    
+    
+    
     
     
     
@@ -202,36 +939,212 @@ table {
   
 
 
-    <div class="number1 rellax" data-rellax-speed="-1" style="transform: translate3d(0px, 50px, 0px);">
-        <img src="Number1.svg" alt="trees">
+    <div class="number1 rellax" data-rellax-speed=".5" style="transform: translate3d(0px, 110px, 0px);">
+        <img src="newtrees.svg" alt="trees">
     </div>    
         
-            <div class="number2 rellax" data-rellax-speed="-1" style="transform: translate3d(0px, 50px, 0px);">
-        <img src="Number2.svg" alt="trees">
+            <div class="number2 rellax" data-rellax-speed="-.6" style="transform: translate3d(0px, 60px, 0px);">
+        <img src="newmount1.svg" alt="trees">
     </div>   
         
-     <div class="number3 rellax" data-rellax-speed="-1" style="transform: translate3d(0px, 50px, 0px);">
-        <img src="Number3.svg" alt="trees">
+     <div class="number3 rellax" data-rellax-speed="-.9" style="transform: translate3d(0px, 57px, 0px);">
+        <img src="newmount2.svg" alt="trees">
     </div> 
         
-     <div class="number4 rellax" data-rellax-speed="1" style="transform: translate3d(0px, 50px, 0px);">
-        <img src="Number4.svg" alt="trees">
+     <div class="number4 rellax" data-rellax-speed="-2" style="transform: translate3d(0px, 55px, 0px);">
+        <img src="newmount3.svg" alt="trees">
     </div>         
         
-     <div class="number5 rellax" data-rellax-speed=".5" style="transform: translate3d(0px, 80px, 0px);">
-        <img src="Number5.svg" alt="trees">
+     <div class="number5 rellax" data-rellax-speed="-2" style="transform: translate3d(0px, 50px, 0px);">
+        <img src="newmount4.svg" alt="trees">
     </div>          
-        <div class="sky"></div>    
+        <div class="sky rellax" data-rellax-speed="-3" style="transform: translate3d(0px, 0px, 0px);">
+        <img src="newsky.svg" alt="sky">
+        </div>    
         
     </div>    
         
+    <div class="cta"><a href="https://www.nps.gov/olym/index.htm"><div class="gif1"></div></a></div>
 
         
-    <div class="box1"></div>
-    <div class="box2"></div>
-    <div class="box3"></div>
-    <div class="box4"></div>
-    <div class="box5"></div>
+    <div class="funfact">
+            <img src="funfacts-03-text.svg" alt="backpacking">        
+            <img src="funfacts-03.svg" alt="backpacking">
+
+        </div>
+    
+    
+    <div class="thingstodo"> 
+    
+    <div class="things">THINGS
+            <div class="todo">TO DO</div>
+    
+    </div>
+    
+    
+    
+    </div>
+    
+    <div class="backpacking">
+        <div class="backpacking_header">BACKPACKING
+        <div id="backpacking_content">
+        With 611 miles of trails in the park, and nearly one million acres of wilderness to explore. From rugged, glaciated peaks, to isolated coastlines, the only American rainforests, high alpine lakes and amazing waterfalls, the trails of Olympic lead to some of the best destinations in the world.      
+            
+        </div>    
+            
+        </div>            
+        <div class="backpacking_illustration">        
+            <img src="backpacking_flat.svg" alt="backpacking">
+
+        
+        </div>
+    
+    
+    </div>
+    
+    <div class="boating">
+        <div class="boating_header">BOATING
+        <div id="boating_content">
+        With Rivers, lakes, and coasts, Olympic has a place for paddlers and motor boat enthusiasts.  With 73 miles of wilderness coast,  3,000 miles of rivers and streams to explore.    
+            
+        </div>    
+            
+        </div>            
+        <div class="boating_illustration">        
+            <img src="boating.svg" alt="boating">
+
+        
+        </div>
+    
+    
+    </div>
+    
+    
+    
+    
+    
+    <div class="camping">
+        <div class="camping_header">CAMPING
+        <div id="camping_content">
+        Camping in Olympic lets you experience several different Olympic Peninsula landscapes. Plan your camping trip and stay at one of Olympic's 16 campgrounds.  
+            
+        </div>    
+            
+        </div>            
+        <div class="camping_illustration">        
+            <img src="camping.svg" alt="camping">
+
+        
+        </div>
+    
+    
+    </div>   
+    
+    
+    
+    
+    <div class="fishing">
+        <div class="fishing_header">FISHING
+        <div id="fishing_content">
+        Fishermen can enjoy their favorite pastime in all seasons at Olympic. With 4,000 miles of fishable waters, 600 high country lakes, and 70 miles of tidewater habitats, Olympic National Park offers excellent fishing for 31 species of fish. 
+            
+        </div>    
+            
+        </div>            
+        <div class="fishing_illustration">        
+            <img src="fishing.svg" alt="fishing">
+
+        
+        </div>
+    
+    
+    </div>  
+    
+    
+    <div class="wildlifeviewing">
+        <div class="wildlifeviewing_header">WILDLIFE<br>VIEWING
+        <div id="wildlifeviewing_content">
+        Interested in encountering wildlife in the wilderness? Learn about the best places to see animals in the park. Many wild animals dwell within Olympic National Park. Despite their abundance, viewing wildlife is often a matter of luck and diligence.
+            
+        </div>    
+            
+        </div>            
+        <div class="wildlifeviewing_illustration">        
+            <img src="wildlife_viewing.svg" alt="wildlife viewing">
+
+        
+        </div>
+    
+    
+    </div>  
+    
+    
+    
+    
+    
+    <div class="info"><div class="address">3002 Mt Angeles Rd,<br>Port Angeles, WA 98362
+        <div class="lola">47.8021° N 123.6044° W
+        
+        </div>
+        </div></div>
+    
+    <div class="ctatwo"><a href="https://www.nps.gov/olym/index.htm"><div class="gif2"></div></a></div>
+    
+    
+    
+    
+    
+    <div class="parks">
+<h1>National Parks</h1>
+    
+    <div class="leftcolumn">
+	<br><br>
+	
+<script type="text/javascript">
+var total_images = 3;
+var random_number = Math.floor((Math.random()*total_images));
+var random_img = new Array();
+random_img[0] = '<a href="page1.html"><img src="https://vweiss4.github.io/DES350/poster-2.gif" width="100%"></a>';
+random_img[1] = '<a href="page2.html"><img src="https://avelaz36.github.io/DES350/np_poster.gif" width="100%"></a>';
+random_img[2] = '<a href="page3.html"><img src="https://lpark25.github.io/DES350/Comp-1_1.gif" width="100%"></a>';
+document.write(random_img[random_number]);
+</script>
+</div>
+
+<div class="midcolumn">
+<br><br>
+	
+	<script type="text/javascript">
+var total_images = 3;
+var random_number = Math.floor((Math.random()*total_images));
+var random_img = new Array();
+random_img[0] = '<a href="page1.html"><img src="https://snguye44.github.io/DES350/natureposterfinal.gif" width="100%"></a>';
+random_img[1] = '<a href="page2.html"><img src="https://jmiran28.github.io/DES350/olympic-poster.gif" width="100%"></a>';
+random_img[2] = '<a href="page3.html"><img src="https://dmejia11.github.io/DES350/Mejia_rocky.gif" width="100%"></a>';
+document.write(random_img[random_number]);
+</script>
+	
+</div>
+	
+	<div class="rightcolumn">
+<br><br>
+	
+	<script type="text/javascript">
+var total_images = 3;
+var random_number = Math.floor((Math.random()*total_images));
+var random_img = new Array();
+random_img[0] = '<a href="page1.html"><img src="https://samorie.github.io/DES350/poster_final1.gif" width="100%"></a>';
+random_img[1] = '<a href="page2.html"><img src="https://donteking.github.io/DES350/AnimatedPoster.gif" width="100%"></a>';
+random_img[2] = '<a href="page3.html"><img src="https://ahalam2.github.io/DES350/Yellowstone.gif" width="100%"></a>';
+document.write(random_img[random_number]);
+</script>
+</div>
+    
+    
+    
+    </div>
+
+    
 
     
     
@@ -244,24 +1157,7 @@ table {
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+ 
     
 
     
